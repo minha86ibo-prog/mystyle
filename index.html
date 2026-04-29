@@ -6,90 +6,84 @@
     <title>나의HTML 작품 포트폴리오 페이지</title>
 </head>
 <body>
+ <header>
     <h1>🏡 신민하의 HTML 포트폴리오</h1>
     <img src="https://www.shutterstock.com/image-vector/portrait-young-woman-short-brown-260nw-2689580887.jpg" alt="프로필 이미지" width="150">
     <p> 안녕하세요! 저는 <strong>신민하</strong>입니다. <br>
             <em>AI바이브코딩수업을 배우고 있는데</em>, <br>
              <em>참 어렵고 하고 나면 신기하네요</em>😀
+ </header>
   <hr>
-    <h3>📁 작품 목록 </h3>
-    <p><strong>HTML 실습 작품 모음</strong></p>
-    <table border="1">
-        <thead>
-            <tr>
-                <th colspan="4">나의 HTML 작품 포트폴리오</th>
-            </tr>
-            <tr>
-                <td>과정</td>
-                <td>작품명</td>
-                <td>설명</td>
-                <td>링크</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="4">기초 과정</td>
-                <td>🐾 동물소개</td>
-                <td>좋아하는 동물 소개 페이지</td>
-                <td><a href="animal.html">보기</a> </td>
-            </tr>
-            <tr>
-                <td>📚️ 독서 목록</td>
-                <td>나의 책 목록 페이지</td>
-                <td><a href="book.html">보기</a></td>
-            </tr>
-            <tr>
-                <td>🎬️ 영화 리뷰</td>
-                <td>영화 감상 리뷰 페이지</td>
-                <td><a href="movie.html">보기</a></td>
-            </tr>
-            <tr>
-                <td>🍽️ 레시피</td>
-                <td>나만의 레시피 페이지</td>
-                <td><a href="recipe.html">보기</a></td>
-            </tr>
-            <tr>
-                <td rowspan="2">심화 과정</td>
-                <td>📅 <mark>시간표</mark></td>
-                <td>rowspan/colspan 시간표</td>
-                <td><a href="timetable.html">보기</a></td>
-            </tr>
-            <tr>
-                <td>🎬 <mark>박스오피스</mark></td>
-                <td>영화순위표+tfoot</td>
-                <td><a href="boxoffice.html">보기</a></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="3">총 작품 수</th>
-                <th>6개</th>
-            </tr>
-        </tfoot>
-    </table>
-    <hr>
-    <h3>🛠️ 배운 태그</h3>
+  <nav>
+    <a href="animal.html">🐾 동물소개</a>
+    <a href="book.html">📚️ 독서 목록</a>
+    <a href="movie.html">🎬️ 영화 리뷰</a>
+    <a href="recipe.html">🍽️ 레시피</a>
+  </nav>
+  <main>
+    <section>
+        <h2>👋 자기소개 </h2>
+        <p> 대전에 살고 있고 AI바이브코딩수업을 하루종일 듣고 있어요!</p>
+    </section>
+
+   <section>
+    <h2>📁 나의 작품 목록 </h2>
     <ul>
-        <li>텍스트 : h1~h6, p, strong, em, mark...</li>
-        <li>목록 : ul, ol, li</li>
-        <li>링크/이미지 : a, img</li>
-        <li><mark>표 : tabel, thead, tboby, tfoot, tr, th, td, colspan, rowspan</mark> </li>
-        <li>구조 : div, span</li>
+        <li><a href="animal.html">🐾 동물 소개 페이지</a></li>
+        <li> <a href="book.html">📚️ 나의 독서 목록</li>
+        <li><a href="movie.html">🎬️ 영화 리뷰 페이지</li>
+        <li><a href="recipe.html">🍽️ 나만의 레시피</a></li>
     </ul>
+    </section>
     <hr>
-    <h3> 유용한 링크</h3>
-    <ol>
-        <li><a href="https://developer.mozilla.org/ko/docs/Web/HTML">MDN Weg Docs-HTML 공식 문서</a></li>
-        <li><a href="https://www.w3schools.com/html/">W3Scholls-HTML튜토리얼</a></li>
-        <li><a href="https://caniuse.com/">Can I Use-브라우저 호환성 확인</a></li>
-    </ol>
-    <hr>
-    <p>신민하, 방과 후 강사 양성 과정, 2026년 </p>
-   
-    <footer>
-        <p>2026. ShinMinHa. &copy;  All Rights Reserved.</p>
-    </footer>
-   
+    <h2>💬 방문자 메모 </h2>
+    <section id="guestbook">
+     <form action="">
+        <div class="input-groug">
+            <label for="user-name">이름</label><br>
+            <input type="text" id="name" placeholder="이름을 입력하세요">
+        </div>
+
+        <div>
+            <label for="visit-path">방문경로</label><br>
+
+        <select id="visit-path" name="visit-path">
+            <option value="direct">직접방문</option>
+            <option value="search">검색</option>
+            <option value="recommend">추천</option>
+        </select>   
+        </div>
+      
+
+        <div>
+            <label for="memo">메모</label><br>
+            <textarea id="memo" name="memo" cols="40" rows="5" placeholder="방문 소감을 남겨주세요 😊"></textarea>
+        </div>
+      
+        <button type="submit">메모남기기 </button>
+
+     </form>
+    </section>
+     </main>   
+     
+
+<footer>
+    
+    <p>홍길동 · 방과 후 강사 양성 과정 · 2026 </p>
+        
+    <div class="copyright">
+            <p>Minha. 2026. &copy; All Rights Reserved.</p>
+    </div>
+    
+    
+</footer>
+    
+    
+    
+
+
+    
+    
 
 </body>
 </html
